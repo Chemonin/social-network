@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Profile from "./components/Profile";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className='app-wrapper'>
-      <header className='app-header'>
-        <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt=""/>
-      </header>
-      <nav className='app-nav'>
-        <ul>
-          <li><a href="">Profile</a></li>
-          <li><a href="">Message</a></li>
-          <li><a href="">News</a></li>
-          <li><a href="">Music</a></li>
-        </ul>
-      </nav>
-      <div className='app-content'>
-        Main Content
-      </div>
+      <Header/>
+      <Profile/>
+      <Footer/>
     </div>
   );
 }

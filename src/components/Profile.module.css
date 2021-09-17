@@ -1,0 +1,16 @@
+.content {
+    grid-area: c;
+    background-color: #E27102;
+}
+
+.item {
+    color: red;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100%;
+}

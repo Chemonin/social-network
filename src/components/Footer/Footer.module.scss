@@ -7,14 +7,17 @@
         border-radius: 30px;
         padding: 20px 30px;
         background-color: #E27102;
-        border: 1px solid white;
-        color: white;
+        border: 1px solid #fefaf0;
+        color: #fefaf0;
         font-weight: normal;
         text-transform: uppercase;
         font-size: 16px;
+        opacity: 1 !important;
         &:hover {
-            background-color: white;
+            background-color: #fefaf0;
             color: #E27102;
+            opacity: 1 !important;
+            cursor: pointer;
         }
     }
 }
@@ -29,7 +32,7 @@
     min-height: 100%;
 
     a {
-        color: white;
+        color: #fefaf0;
         opacity: 0.6;
         &:hover {
             opacity: 1;
@@ -41,6 +44,10 @@
     display: flex;
     column-gap: 10px;
     margin-bottom: 20px;
+
+    a {
+        opacity: 1;
+    }
 }
 
 .socialBtn {

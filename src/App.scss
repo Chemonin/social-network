@@ -1,7 +1,7 @@
-$primary: #E27102;
-$secondary: #ba350a;
-$text: #193171;
-$light-bg: #fefaf0;
+$primary: #E27102; /* use for all headers, contrast bg */
+$secondary: #ba350a; /* for link, btns hover state */
+$text: #193171; /* for text */
+$light-bg: #fefaf0; /* main bg */
 
 .app-wrapper {
   display: grid;

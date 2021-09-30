@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Home.module.scss'
 import Feed from "./Feed/Feed";
-import logo from '../../assets/logo_russian.png'
+import logo from '../../assets/logo_rus_red.png'
 
 const Home = () => {
   return (

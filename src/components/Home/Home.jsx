@@ -5,7 +5,6 @@ import logo from '../../assets/logo_russian.png'
 
 const Home = () => {
   return (
-    <div className={ s.content }>
       <div className={ s.container }>
         <div className={ s.intro }>
           <img src={ logo } alt=""/>
@@ -22,7 +21,6 @@ const Home = () => {
         </div>
         <Feed/>
       </div>
-    </div>
   )
 }
 

@@ -1,0 +1,28 @@
+.container {
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  &Items {
+
+  }
+}
+
+.dialog {
+
+}
+
+.messages {
+
+}
+
+.message {
+
+}
+

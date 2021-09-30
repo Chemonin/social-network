@@ -3,6 +3,10 @@
 
   ul {
     margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -23,12 +27,10 @@
       border-bottom-color: #ba350a;
       color: #ba350a;
     }
+    &.active {
+      border-bottom: 8px solid;
+      border-bottom-color: #ba350a;
+      color: #ba350a;
+    }
   }
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

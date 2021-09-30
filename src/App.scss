@@ -3,13 +3,20 @@ $secondary: #ba350a; /* for link, btns hover state */
 $text: #193171; /* for text */
 $light-bg: #fefaf0; /* main bg */
 
-.app-wrapper {
-  display: grid;
+.app {
+  &-wrapper {
+    display: grid;
 
-  margin: 0 auto;
-  grid-template-areas:
-    'h h'
-    'c c'
-    'f f';
-  grid-template-rows: 150px 1fr 200px;
+    margin: 0 auto;
+    grid-template-areas:
+      'h h'
+      'c c'
+      'f f';
+    grid-template-rows: 150px 1fr 200px;
+  }
+
+  &-content {
+    grid-area: c;
+    background-color: #fefaf0;
+  }
 }

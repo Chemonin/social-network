@@ -3,6 +3,12 @@
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
+
+    & article {
+        border: 1px solid #E27102;
+        margin: 20px;
+        padding: 10px;
+    }
 }
 
 .intro {
@@ -28,4 +34,35 @@
             background-color: #ba350a;
         }
     }
+}
+
+.childCard {
+    display: flex;
+    border: 1px solid #E27102;
+    padding: 10px;
+    max-width: 50%;
+
+    & .imgWrapp {
+        width: 200px;
+        min-width: 200px;
+        img {
+            max-width: 90%;
+        }
+    }
+}
+
+.childernList {
+    display: flex;
+    column-gap: 10px;
+}
+
+.partnersList {
+    display: flex;
+    column-gap: 20px;
+}
+
+.partnerCard {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #E27102;
 }

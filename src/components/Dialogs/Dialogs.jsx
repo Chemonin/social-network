@@ -17,26 +17,36 @@ const Message = (props) => {
 }
 
 const Dialogs = (props) => {
-  return (
-    <div className={ s.container }>
-      <div className={ s.dialogs }>
-        <div className={ s.dialogsItems }>
-         <DialogItem name='Ivan' id='1'/>
-         <DialogItem name='Peter' id='2'/>
-         <DialogItem name='Oleg' id='3'/>
-         <DialogItem name='Valera' id='4'/>
-         <DialogItem name='Dima' id='5'/>
-        </div>
-        <div className={ s.messages }>
-          <Message message='Hello, Friend' />
-          <Message message='How are you?' />
-          <Message message='You looks great' />
-          <Message message='Thanks, you too' />
 
+    const dialogsData = [
+      {"id": 1, "name": "Ivan"},
+      {"id": 2, "name": "Peter"},
+      {"id": 3, "name": "Oleg"},
+      {"id": 4, "name": "Valera"},
+      {"id": 5, "name": "Dima"},
+    ]
+
+    const messagesData = [
+        {"id": 1, "text": "Hello, Friend"},
+        {"id": 2, "text": "How are you?"},
+        {"id": 3, "text": "You looks great"},
+        {"id": 4, "text": "Thanks, you too"},
+    ]
+
+    const dialogElements = dialogsData.map( dialog => <DialogItem name={dialog.name} id={dialog.id} ></DialogItem>)
+    const messegesElements = messagesData.map( message => <Message message={message.text}></Message>)
+    return (
+        <div className={ s.container }>
+          <div className={ s.dialogs }>
+            <div className={ s.dialogsItems }>
+                { dialogElements }
+            </div>
+            <div className={ s.messages }>
+                { messegesElements }
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  )
+    )
 }
 
 export default Dialogs;

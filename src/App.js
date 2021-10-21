@@ -5,14 +5,21 @@ import Footer from "./components/Footer/Footer";
 import Dialogs from "./components/Dialogs/Dialogs"
 import {Route, BrowserRouter} from "react-router-dom";
 
-function App() {
+const App = (props) => {
+
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
         <Header/>
         <div className="app-content">
-          <Route path='/home'  component={Home}/>
-          <Route path='/dialogs' component={Dialogs}/>
+          <Route
+            path='/home'
+            render={ () => <Home state={props.state.homePage.posts}/> }
+          />
+          <Route
+            path='/dialogs'
+            render={ () => <Dialogs state={props.state.dialogsPage} /> }
+          />
         </div>
         <Footer/>
       </div>

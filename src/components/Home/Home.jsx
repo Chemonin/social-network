@@ -5,7 +5,7 @@ import logo from '../../assets/logo_rus_red.png'
 import authorAvatar from '../../assets/FrIlya.png'
 import NikitaN from '../../assets/images/NikitaN.png'
 
-const Home = () => {
+const Home = (props) => {
     return (
         <div className={s.container}>
             <article className={s.intro}>
@@ -96,7 +96,7 @@ const Home = () => {
                     <img src={authorAvatar} alt=""/>
                 </div>
             </article>
-            <Feed/>
+            <Feed posts={props.state}/>
             <article className={ s.partnersList }>
                 <h3>СПОНСОРЫ и ПАРТЕНЕРЫ</h3>
                 <div className={ s.partnerCard }></div>

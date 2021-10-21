@@ -1,11 +1,10 @@
 import React from "react";
 import s from './Feed.module.scss'
 import Post from "./Post/Post";
-import POSTS_DATA from './postsData'
 
-const Feed = () => {
+const Feed = (props) => {
 
-    const postsElements = POSTS_DATA.map( p => <Post teaser={p.teaser} title={p.title} date={p.date}></Post>)
+    const postsElements = props.posts.map( p => <Post teaser={p.teaser} title={p.title} date={p.date}></Post>)
     return (
         <div>
             <h2>СОБЫТИЯ</h2>

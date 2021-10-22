@@ -96,7 +96,7 @@ const Home = (props) => {
                     <img src={authorAvatar} alt=""/>
                 </div>
             </article>
-            <Feed posts={props.state}/>
+            <Feed posts={props.state} addPost={props.addPost}/>
             <article className={ s.partnersList }>
                 <h3>СПОНСОРЫ и ПАРТЕНЕРЫ</h3>
                 <div className={ s.partnerCard }></div>

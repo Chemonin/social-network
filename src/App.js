@@ -14,7 +14,7 @@ const App = (props) => {
         <div className="app-content">
           <Route
             path='/home'
-            render={ () => <Home state={props.state.homePage.posts}/> }
+            render={ () => <Home state={props.state.homePage.posts} addPost={props.addPost}/> }
           />
           <Route
             path='/dialogs'

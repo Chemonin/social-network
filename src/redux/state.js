@@ -50,4 +50,13 @@ const state = {
   }
 }
 
+export const addPost = (postMessage) => {
+  const newPost = {
+    id: 5,
+    text: postMessage,
+    likesCount: 0,
+  }
+  state.dialogsPage.messages.push(newPost);
+}
+
 export default state;

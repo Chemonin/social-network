@@ -1,3 +1,5 @@
+import {renderEntireTree} from "../render";
+
 const state = {
   homePage: {
     posts: [
@@ -52,11 +54,12 @@ const state = {
 
 export const addPost = (postMessage) => {
   const newPost = {
-    id: 5,
-    text: postMessage,
-    likesCount: 0,
+    date: "12.12.2000",
+    title: "Title",
+    teaser: postMessage,
   }
-  state.dialogsPage.messages.push(newPost);
+  state.homePage.posts.push(newPost);
+  renderEntireTree(state);
 }
 
 export default state;

@@ -10,6 +10,11 @@ const Feed = (props) => {
     const addPost = () => {
       props.addPost(newPostElement.current.value);
     }
+
+    const onPostChange = () => {
+      const text = newPostElement.current.value;
+      props.updateNewPostText(text);
+    }
     return (
         <div>
             <h2>СОБЫТИЯ</h2>
@@ -19,7 +24,7 @@ const Feed = (props) => {
             </ul>
             <div>
                 <h3>New Post</h3>
-                <textarea name="" id="" cols="30" rows="5" ref={newPostElement}></textarea>
+                <textarea onChange={ onPostChange} name="" id="" cols="30" rows="5" ref={newPostElement} value={ props.newPostText } />
                 <button onClick={ addPost }>Add</button>
                 <button>Delete</button>
             </div>

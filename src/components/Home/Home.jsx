@@ -96,7 +96,12 @@ const Home = (props) => {
                     <img src={authorAvatar} alt=""/>
                 </div>
             </article>
-            <Feed posts={props.state} addPost={props.addPost}/>
+            <Feed
+              posts={props.homePage.posts}
+              newPostText={props.homePage.newPostText}
+              addPost={props.addPost}
+              updateNewPostText={props.updateNewPostText }
+            />
             <article className={ s.partnersList }>
                 <h3>СПОНСОРЫ и ПАРТЕНЕРЫ</h3>
                 <div className={ s.partnerCard }></div>

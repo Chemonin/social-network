@@ -34,6 +34,7 @@ const state = {
         "date": "Опубликовано 27 Сентябрь 2021 г."
       },
     ],
+    newPostText: 'new text'
   },
   dialogsPage: {
     dialogs: [
@@ -52,13 +53,21 @@ const state = {
   }
 }
 
+window.state = state;
+
 export const addPost = (postMessage) => {
   const newPost = {
     date: "12.12.2000",
     title: "Title",
-    teaser: postMessage,
+    teaser: state.homePage.newPostText,
   }
   state.homePage.posts.push(newPost);
+  state.homePage.newPostText = "";
+  renderEntireTree(state);
+}
+
+export const updateNewPostText = (newText) => {
+  state.homePage.newPostText = newText;
   renderEntireTree(state);
 }
 

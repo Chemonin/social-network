@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Dialogs from "./components/Dialogs/Dialogs"
 import {Route, BrowserRouter} from "react-router-dom";
+import {updateNewPostText} from "./redux/state";
 
 const App = (props) => {
 
@@ -14,7 +15,11 @@ const App = (props) => {
         <div className="app-content">
           <Route
             path='/home'
-            render={ () => <Home state={props.state.homePage.posts} addPost={props.addPost}/> }
+            render={ () => <Home
+              homePage={props.state.homePage}
+              addPost={props.addPost}
+              updateNewPostText={props.updateNewPostText}
+            /> }
           />
           <Route
             path='/dialogs'

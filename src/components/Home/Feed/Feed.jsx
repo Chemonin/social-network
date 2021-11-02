@@ -24,7 +24,10 @@ const Feed = (props) => {
             </ul>
             <div>
                 <h3>New Post</h3>
-                <textarea onChange={ onPostChange} name="" id="" cols="30" rows="5" ref={newPostElement} value={ props.newPostText } />
+                <textarea name="" id="" cols="30" rows="5"
+                    onChange={ onPostChange}
+                    ref={newPostElement} value={ props.newPostText }
+                />
                 <button onClick={ addPost }>Add</button>
                 <button>Delete</button>
             </div>

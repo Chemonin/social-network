@@ -17,8 +17,7 @@ const App = (props) => {
             path='/home'
             render={ () => <Home
               homePage={props.state.homePage}
-              addPost={props.addPost}
-              updateNewPostText={props.updateNewPostText}
+              dispatch={props.dispatch}
             /> }
           />
           <Route

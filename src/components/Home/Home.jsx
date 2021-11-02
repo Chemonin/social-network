@@ -99,8 +99,7 @@ const Home = (props) => {
             <Feed
               posts={props.homePage.posts}
               newPostText={props.homePage.newPostText}
-              addPost={props.addPost}
-              updateNewPostText={props.updateNewPostText }
+              dispatch={props.dispatch}
             />
             <article className={ s.partnersList }>
                 <h3>СПОНСОРЫ и ПАРТЕНЕРЫ</h3>

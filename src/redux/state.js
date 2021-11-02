@@ -77,6 +77,21 @@ const store = {
   },
   subscribe(observer) {
     this._callSubscriber = observer;
+  },
+  dispatch(action) {
+    if (action.type === "ADD-POST") {
+      const newPost = {
+        date: "12.12.2000",
+        title: "Title",
+        teaser: this._state.homePage.newPostText,
+      }
+      this._state.homePage.posts.push(newPost);
+      this._state.homePage.newPostText = "";
+      this._callSubscriber(this._state);
+    } else if (action.type === "UPDATE-NEW-POST-TEXT") {
+      this._state.homePage.newPostText = newText;
+      this._callSubscriber(this._state);
+    }
   }
 }
 

@@ -1,6 +1,5 @@
-let renderEntireTree = () => {
-
-}
+const ADD_POST = "ADD-POST";
+const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
 
 const store = {
   _state: {
@@ -58,14 +57,12 @@ const store = {
   getState() {
     return this._state;
   },
-  _callSubscriber() {
-
-  },
+  _callSubscriber() {},
   subscribe(observer) {
     this._callSubscriber = observer;
   },
   dispatch(action) {
-    if (action.type === "ADD-POST") {
+    if (action.type === ADD_POST) {
       const newPost = {
         date: "12.12.2000",
         title: "Title",
@@ -74,12 +71,19 @@ const store = {
       this._state.homePage.posts.push(newPost);
       this._state.homePage.newPostText = "";
       this._callSubscriber(this._state);
-    } else if (action.type === "UPDATE-NEW-POST-TEXT") {
+    } else if (action.type === UPDATE_NEW_POST_TEXT) {
       this._state.homePage.newPostText = action.newText;
       this._callSubscriber(this._state);
     }
   }
 }
 
+export const addPostActionCreator = () => {
+  return { type: ADD_POST}
+}
+
+export const updateNewPostTextActionCreator = (text) => {
+  return {type: UPDATE_NEW_POST_TEXT, newText: text}
+}
 window.store = store;
 export default store;

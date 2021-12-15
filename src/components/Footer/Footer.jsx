@@ -5,15 +5,16 @@ import Odnoklassnik from "../../assets/images/icons/iconOdnoklassniki.svg"
 import iconFB from "../../assets/images/icons/iconFB.svg"
 import iconYoutube from "../../assets/images/icons/iconYoutube.svg"
 import iconInst from "../../assets/images/icons/iconInst.svg"
+import Link from "../UI/Link/Link";
 
 const Footer = () => {
   return (
     <div className={ s.footer }>
       <div className={ s.container }>
         <div>
-        <a link={"https://www.orthodiakonia.de/de/impressum/"}>Impressum</a>
+        <Link view={'default'} type={'light'} url={"https://www.orthodiakonia.de/de/impressum/"}>Impressum</Link>
         <br/>
-        <a link={"https://www.orthodiakonia.de/de/datenschutzerklaerung/"}>Datenschutzerklärung</a>
+        <Link view={'default'} type={'light'} url={"https://www.orthodiakonia.de/de/datenschutzerklaerung/"}>Datenschutzerklärung</Link>
         <p>
           Russisch Orthodoxe Kirchengemeinde Stuttgart
         </p>
@@ -39,11 +40,11 @@ const Footer = () => {
               <img src={ Odnoklassnik } alt=""/>
             </a>
           </div>
-          <a link={"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DGRDVU2DCUL8C"}>
+          <Link view={'default'} type={'light'} url={"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DGRDVU2DCUL8C"}>
             PayPal
-          </a>
+          </Link>
           <br/>
-          <a className={ s.footer_btn } link={"http://ticket.orthodiakonia.de"}>Свяжитесь с нами</a>
+          <Link type={'outline'} view={'btn'} url={"http://ticket.orthodiakonia.de"} >Свяжитесь с нами</Link>
         </div>
       </div>
     </div>

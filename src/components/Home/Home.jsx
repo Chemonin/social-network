@@ -4,6 +4,7 @@ import Feed from "./Feed/Feed";
 import logo from '../../assets/logo_rus_red.png'
 import authorAvatar from '../../assets/FrIlya.png'
 import NikitaN from '../../assets/images/NikitaN.png'
+import Link from "../UI/Link/Link";
 
 const Home = (props) => {
     return (
@@ -17,7 +18,7 @@ const Home = (props) => {
                     помощь,
                     умножение любви и радости в каждом отдельном человеке и в человеческом обществе в целом.
                 </p>
-                <a className={s.intro_moreBtn} href="">Узнать больше</a>
+                <Link type={'primary'} view={'btn'} url={'#'}>Узнать больше</Link>
             </article>
             <article className={ s.childernList }>
                 <div className={ s.childCard }>

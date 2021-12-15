@@ -2,6 +2,7 @@ import React from "react";
 import s from './Feed.module.scss'
 import Post from "./Post/Post";
 import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../redux/state";
+import Link from "../../UI/Link/Link";
 
 const Feed = (props) => {
 
@@ -22,7 +23,7 @@ const Feed = (props) => {
             <h2>СОБЫТИЯ</h2>
             <ul className={s.posts}>
                 { postsElements }
-                <button>ВСЕ СОБЫТИЯ</button>
+                <Link type={'primary'} view={'btn'} url={'#'}>ВСЕ СОБЫТИЯ</Link>
             </ul>
             <div>
                 <h3>New Post</h3>

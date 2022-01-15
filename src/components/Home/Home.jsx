@@ -1,25 +1,24 @@
 import React from "react";
 import s from './Home.module.scss'
 import Feed from "./Feed/Feed";
-import logo from '../../assets/logo_rus_red.png'
 import authorAvatar from '../../assets/FrIlya.png'
 import NikitaN from '../../assets/images/NikitaN.png'
-import Link from "../UI/Link/Link";
+import {Button, Container} from 'react-bootstrap';
+import Jumbotron from '../Jumbotron/Jumbotron'
 
 const Home = (props) => {
     return (
-        <div className={s.container}>
-            <article className={s.intro}>
-                <img src={logo} alt=""/>
-                <p className={s.intro_text}>
-                    Русская Православная Диакония в Европе занимается соединением эффективных современных
-                    технологий благотворительности с христианским служением ближнему.
-                    Цель — поддержка тяжелобольных детей и взрослых, объединение нуждающихся в помощи и оказывающих
-                    помощь,
-                    умножение любви и радости в каждом отдельном человеке и в человеческом обществе в целом.
-                </p>
-                <Link type={'primary'} view={'btn'} url={'#'}>Узнать больше</Link>
-            </article>
+        <div>
+            <Jumbotron>
+                    <p>
+                        Русская Православная Диакония в Европе занимается соединением эффективных современных
+                        технологий благотворительности с христианским служением ближнему.
+                        Цель — поддержка тяжелобольных детей и взрослых, объединение нуждающихся в помощи и оказывающих
+                        помощь,
+                        умножение любви и радости в каждом отдельном человеке и в человеческом обществе в целом.
+                    </p>
+                    <Button type={'primary'} view={'btn'} url={'#'}>ПОМОЧЬ</Button>
+            </Jumbotron>
             <article className={ s.childernList }>
                 <div className={ s.childCard }>
                     <div className={ s.imgWrapp }>

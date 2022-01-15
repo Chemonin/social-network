@@ -1,9 +1,7 @@
 import React from "react";
-import s from './Navbar.module.scss'
 import {Link, NavLink} from "react-router-dom";
-import {Container, Nav, Navbar, Row} from 'react-bootstrap';
+import {Container, Nav, Navbar, Row, Button} from 'react-bootstrap';
 import smallLogo from '../../assets/gd-hand-logo.png'
-import {Button} from "react-bootstrap";
 
 const MainNav = () => {
   return (

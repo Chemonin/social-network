@@ -1,5 +1,7 @@
+import partners from '../assets/images/partners'
 const ADD_POST = "ADD-POST";
 const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
+
 
 const store = {
   _state: {
@@ -34,6 +36,50 @@ const store = {
           "likesCount": 2,
           "title": "Вебинар для всех, кто хочет помочь другому, 2-10-2021",
           "date": "Опубликовано 27 Сентябрь 2021 г."
+        },
+      ],
+      children: [
+        {
+          "name": "Степан П.",
+          "age": "3 года",
+          "donation_amount": "600 000 евро",
+          "photo": "https://www.orthodiakonia.de/wp-content/uploads/2022/01/StepanP.jpg"
+        },
+        {
+          "name": "Владимир П.",
+          "age": "7 лет",
+          "donation_amount": "3000 евро",
+          "photo": "https://www.orthodiakonia.de/wp-content/uploads/2022/01/VladimirP.jpg"
+        },
+        {
+          "name": "Алисия П.",
+          "age": "9 лет",
+          "donation_amount": "1500 евро",
+          "photo": "https://www.orthodiakonia.de/wp-content/uploads/2022/01/AliciaP-1.jpg"
+        },
+        {
+          "name": "Марфа К.",
+          "age": "4 года",
+          "donation_amount": "3000 евро",
+          "photo": "https://www.orthodiakonia.de/wp-content/uploads/2022/01/MarthaK-1.jpg"
+        }
+      ],
+      partners: [
+        {
+          "link": "#",
+          "logo": partners.blagoserdie
+        },
+        {
+          "link": "#",
+          "logo": partners.berlin24
+        },
+        {
+          "link": "#",
+          "logo": partners.edition_hagie
+        },
+        {
+          "link": "#",
+          "logo": partners.Boleem
         },
       ],
       newPostText: 'new text'

@@ -7,7 +7,6 @@ import Footer from "./components/Footer/Footer";
 import Dialogs from "./components/Dialogs/Dialogs"
 import {Route, BrowserRouter, Switch} from "react-router-dom";
 import {updateNewPostText} from "./redux/state";
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = (props) => {
 

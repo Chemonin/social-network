@@ -1,0 +1,131 @@
+.btn {
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    filter: grayscale(1) opacity(0.5);
+  }
+}
+
+.btn-primary {
+  &,
+  &:active,
+  &:focus,
+  &:hover {
+    color: $white;
+  }
+}
+
+.btn-outline-secondary {
+  color: $gray-1;
+  border-color: $gray-1;
+
+  &:disabled,
+  &.disabled {
+    color: $gray-1;
+  }
+}
+
+.btn-light {
+  color: $gray-1;
+
+  &:hover {
+    $btn-light-hover-color: tint-color($gray-5, 33);
+
+    background-color: $btn-light-hover-color;
+    border-color: $btn-light-hover-color;
+  }
+
+  &:active,
+  &.active,
+  &.dropdown-toggle.show {
+    background-color: $gray-5;
+    border-color: $gray-5;
+  }
+}
+
+.btn-icon {
+  border-radius: 50% !important;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  display: inline-flex;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  &-send {
+    padding: 0;
+    border: none;
+    font-size: 20px;
+    color: $primary;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.btn-link {
+  font-size: $btn-font-size;
+  padding: 0.25rem;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    color: $btn-link-hover-color;
+    opacity: $btn-close-hover-opacity;
+  }
+}
+
+.btn-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border-radius: 50% !important;
+  border: 2px solid $gray-4;
+  background-size: cover;
+}
+
+.btn-fb {
+  background-color: $fb;
+  text-transform: uppercase;
+  color: $white;
+  &:hover,
+  &:active {
+    background-color: $white;
+    color: $fb;
+    border: 1px solid $fb;
+  }
+}
+
+.btn-apple {
+  background-color: $black;
+  text-transform: uppercase;
+  color: $white;
+  & .icon {
+    margin-right: 15px;
+  }
+  &:hover,
+  &:active {
+    background-color: $white;
+    color: $black;
+    border: 1px solid $black;
+  }
+}
+
+.burger-button {
+  border: 0;
+  padding: 0;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: $font-size-sm;
+  line-height: 1;
+
+  &-icon {
+    font-size: 1.5rem;
+  }
+}

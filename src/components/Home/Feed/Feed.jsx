@@ -25,15 +25,15 @@ const Feed = (props) => {
                 { postsElements }
                 <Link type={'primary'} view={'btn'} url={'#'}>ВСЕ СОБЫТИЯ</Link>
             </ul>
-            <div>
-                <h3>New Post</h3>
-                <textarea name="" id="" cols="30" rows="5"
-                    onChange={ onPostChange}
-                    ref={newPostElement} value={ props.newPostText }
-                />
-                <button onClick={ addPost }>Add</button>
-                <button>Delete</button>
-            </div>
+            {/*<div>*/}
+            {/*    <h3>New Post</h3>*/}
+            {/*    <textarea name="" id="" cols="30" rows="5"*/}
+            {/*        onChange={ onPostChange}*/}
+            {/*        ref={newPostElement} value={ props.newPostText }*/}
+            {/*    />*/}
+            {/*    <button onClick={ addPost }>Add</button>*/}
+            {/*    <button>Delete</button>*/}
+            {/*</div>*/}
         </div>
     )
 }

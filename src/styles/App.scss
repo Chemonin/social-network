@@ -1,5 +1,9 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/swiper/swiper";
+@import "../../node_modules/swiper/modules/pagination/pagination";
+@import "../../node_modules/swiper/modules/navigation/navigation";
+@import "../../node_modules/swiper/modules/navigation/navigation";
 
 // Override bootstrap variables
 @import "./includes/variables";
@@ -28,5 +32,5 @@
 @import "../../node_modules/bootstrap/scss/navbar";
 
 // Override bootstrap rules
-//@import "./includes/buttons";
+@import "./includes/buttons";
 

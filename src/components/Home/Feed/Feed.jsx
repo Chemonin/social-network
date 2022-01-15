@@ -3,6 +3,7 @@ import s from './Feed.module.scss'
 import Post from "./Post/Post";
 import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../redux/state";
 import Link from "../../UI/Link/Link";
+import {Container, Button} from "react-bootstrap";
 
 const Feed = (props) => {
 
@@ -19,11 +20,11 @@ const Feed = (props) => {
       props.dispatch(action)
     }
     return (
-        <div>
-            <h2>СОБЫТИЯ</h2>
+        <Container className={"py-5"}>
+            <h2 className={'text-center'}>НОВОСТИ</h2>
             <ul className={s.posts}>
                 { postsElements }
-                <Link type={'primary'} view={'btn'} url={'#'}>ВСЕ СОБЫТИЯ</Link>
+                <Button type={'primary'} view={'btn'} url={'#'}>ВСЕ СОБЫТИЯ</Button>
             </ul>
             {/*<div>*/}
             {/*    <h3>New Post</h3>*/}
@@ -34,7 +35,7 @@ const Feed = (props) => {
             {/*    <button onClick={ addPost }>Add</button>*/}
             {/*    <button>Delete</button>*/}
             {/*</div>*/}
-        </div>
+        </Container>
     )
 }
 

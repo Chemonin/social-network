@@ -1,6 +1,4 @@
 import './styles/App.scss'
-import "swiper/swiper.scss";
-import "swiper/modules/pagination/pagination.scss";
 import MainNav from "./components/Navbar/MainNav";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
@@ -13,7 +11,7 @@ const App = (props) => {
   return (
     <BrowserRouter>
         <MainNav/>
-        <Switch className="app-content">
+        <Switch>
           <Route
             path='/home'
             render={ () => <Home

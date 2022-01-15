@@ -1,7 +1,7 @@
 import React from "react";
 import Feed from "./Feed/Feed";
 import authorAvatar from '../../assets/FrIlya.png'
-import {Button, Container, Row, Col} from 'react-bootstrap';
+import {Button, Container, Row, Col, Card} from 'react-bootstrap';
 import Jumbotron from '../Jumbotron/Jumbotron'
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
@@ -21,6 +21,63 @@ const Home = (props) => {
                     </p>
                     <Button type={'primary'} view={'btn'} url={'#'}>ПОМОЧЬ</Button>
             </Jumbotron>
+            <Container>
+                <h2 className={'text-center mb-5'}>СТАТИСТИКА ФОНДА</h2>
+                <Row>
+                    <Col className={'d-flex flex-column align-items-center'}>
+                        <Card style={{ width: '18rem', border: '1px solid black' }}>
+                            <Card.Body>
+                                <Card.Title>Card Title</Card.Title>
+                                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                                <Card.Text>
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content.
+                                </Card.Text>
+                                <Card.Link href="#">Card Link</Card.Link>
+                                <Card.Link href="#">Another Link</Card.Link>
+                            </Card.Body>
+                        </Card>
+                        <Card className={'mt-2'} style={{ width: '18rem', border: '1px solid black' }}>
+                            <Card.Body>
+                                <Card.Title>Card Title</Card.Title>
+                                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                                <Card.Text>
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content.
+                                </Card.Text>
+                                <Card.Link href="#">Card Link</Card.Link>
+                                <Card.Link href="#">Another Link</Card.Link>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col className={'d-flex flex-column align-items-center'}>
+                        <Card style={{ width: '18rem', border: '1px solid black' }}>
+                            <Card.Body>
+                                <Card.Title>Card Title</Card.Title>
+                                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                                <Card.Text>
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content.
+                                </Card.Text>
+                                <Card.Link href="#">Card Link</Card.Link>
+                                <Card.Link href="#">Another Link</Card.Link>
+                            </Card.Body>
+                        </Card>
+                        <Card className={'mt-2'} style={{ width: '18rem', border: '1px solid black' }}>
+                            <Card.Body>
+                                <Card.Title>Card Title</Card.Title>
+                                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                                <Card.Text>
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content.
+                                </Card.Text>
+                                <Card.Link href="#">Card Link</Card.Link>
+                                <Card.Link href="#">Another Link</Card.Link>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+            </Container>
             <Container className='py-5'>
                 <Swiper
                     spaceBetween={30}

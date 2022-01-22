@@ -1,11 +1,11 @@
 import React from "react";
-import {Link, NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {Container, Nav, Navbar, Row, Button} from 'react-bootstrap';
 import smallLogo from '../../assets/gd-hand-logo.png'
 
 const MainNav = () => {
   return (
-    <Navbar expand="lg">
+    <Navbar expand="lg" fixed="top">
         <Container className="justify-content-between">
             <Navbar.Brand>
                 <img
@@ -18,16 +18,16 @@ const MainNav = () => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className='flex-grow-0'>
-                <Nav className="">
-                    <Nav.Link><Link to='/home'>О НАС</Link></Nav.Link>
-                    <Nav.Link href="#link"><Link to='/home'>КАК ПОМОЧЬ</Link></Nav.Link>
-                    <Nav.Link href="#home"><Link to='/dialogs'>НАША ЖИЗНЬ</Link></Nav.Link>
-                    <Nav.Link href="#link"><Link to='/music'>ПОЛЕЗНОЕ</Link></Nav.Link>
-                    <Nav.Link href="#link"><Link to='/music'>ПОЖЕРТВОВАТЬ</Link></Nav.Link>
+                <Nav>
+                    <Link to={'/dialogs'} className={'nav-link'}>ПОЖЕРТВОВАТЬ</Link>
+                    <Link to={'/dialogs'} className={'nav-link'}>МЫ ПОМОГАЕМ</Link>
+                    <Link to={'/dialogs'} className={'nav-link'}>КАК ПОМОЧЬ</Link>
+                    <Link to={'/dialogs'} className={'nav-link'}>ПОЛЕЗНОЕ</Link>
+                    <Link to={'/home'} className={'nav-link'}>О НАС</Link>
                 </Nav>
             </Navbar.Collapse>
             <Nav>
-                <Button variant='primary'>ХОЧУ ПОМОЧЬ</Button>
+                <Button variant='primary me-2'>ХОЧУ ПОМОЧЬ</Button>
                 <Button variant='secondary'>НУЖНА ПОМОЩЬ</Button>
             </Nav>
         </Container>

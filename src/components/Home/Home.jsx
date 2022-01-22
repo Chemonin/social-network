@@ -1,6 +1,7 @@
 import React from "react";
 import Feed from "./Feed/Feed";
 import authorAvatar from '../../assets/FrIlya.png'
+import whiteLogo from '../../assets/logo_russian.png'
 import {Button, Container, Row, Col, Card} from 'react-bootstrap';
 import Jumbotron from '../Jumbotron/Jumbotron'
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
@@ -12,72 +13,15 @@ const Home = (props) => {
     return (
         <div>
             <Jumbotron>
-                    <p>
+                    <p className='w-75'>
                         Русская Православная Диакония в Европе занимается соединением эффективных современных
                         технологий благотворительности с христианским служением ближнему.
                         Цель — поддержка тяжелобольных детей и взрослых, объединение нуждающихся в помощи и оказывающих
                         помощь,
                         умножение любви и радости в каждом отдельном человеке и в человеческом обществе в целом.
                     </p>
-                    <Button type={'primary'} view={'btn'} url={'#'}>ПОМОЧЬ</Button>
+                    <Button type={'primary'} view={'btn'} url={'/dialogs'}>ПОМОЧЬ</Button>
             </Jumbotron>
-            <Container>
-                <h2 className={'text-center mb-5'}>СТАТИСТИКА ФОНДА</h2>
-                <Row>
-                    <Col className={'d-flex flex-column align-items-center'}>
-                        <Card style={{ width: '18rem', border: '1px solid black' }}>
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                                </Card.Text>
-                                <Card.Link href="#">Card Link</Card.Link>
-                                <Card.Link href="#">Another Link</Card.Link>
-                            </Card.Body>
-                        </Card>
-                        <Card className={'mt-2'} style={{ width: '18rem', border: '1px solid black' }}>
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                                </Card.Text>
-                                <Card.Link href="#">Card Link</Card.Link>
-                                <Card.Link href="#">Another Link</Card.Link>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col className={'d-flex flex-column align-items-center'}>
-                        <Card style={{ width: '18rem', border: '1px solid black' }}>
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                                </Card.Text>
-                                <Card.Link href="#">Card Link</Card.Link>
-                                <Card.Link href="#">Another Link</Card.Link>
-                            </Card.Body>
-                        </Card>
-                        <Card className={'mt-2'} style={{ width: '18rem', border: '1px solid black' }}>
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                                </Card.Text>
-                                <Card.Link href="#">Card Link</Card.Link>
-                                <Card.Link href="#">Another Link</Card.Link>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-            </Container>
             <Container className='py-5'>
                 <Swiper
                     spaceBetween={30}
@@ -159,6 +103,66 @@ const Home = (props) => {
                     })}
                 </Swiper>
             </Container>
+            <div className="bg-primary">
+                <Container>
+                    <img src={whiteLogo} alt="" className='w-auto mx-auto'/>
+                    <h2 className={'text-center mb-5'}>СТАТИСТИКА ФОНДА</h2>
+                    <Row>
+                        <Col className={'d-flex flex-column align-items-center'}>
+                            <Card style={{ width: '18rem', border: '1px solid black' }}>
+                                <Card.Body>
+                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                                    <Card.Text>
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </Card.Text>
+                                    <Card.Link href="#">Card Link</Card.Link>
+                                    <Card.Link href="#">Another Link</Card.Link>
+                                </Card.Body>
+                            </Card>
+                            <Card className={'mt-2'} style={{ width: '18rem', border: '1px solid black' }}>
+                                <Card.Body>
+                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                                    <Card.Text>
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </Card.Text>
+                                    <Card.Link href="#">Card Link</Card.Link>
+                                    <Card.Link href="#">Another Link</Card.Link>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col className={'d-flex flex-column align-items-center'}>
+                            <Card style={{ width: '18rem', border: '1px solid black' }}>
+                                <Card.Body>
+                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                                    <Card.Text>
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </Card.Text>
+                                    <Card.Link href="#">Card Link</Card.Link>
+                                    <Card.Link href="#">Another Link</Card.Link>
+                                </Card.Body>
+                            </Card>
+                            <Card className={'mt-2'} style={{ width: '18rem', border: '1px solid black' }}>
+                                <Card.Body>
+                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                                    <Card.Text>
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </Card.Text>
+                                    <Card.Link href="#">Card Link</Card.Link>
+                                    <Card.Link href="#">Another Link</Card.Link>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
         </div>
     )
 }

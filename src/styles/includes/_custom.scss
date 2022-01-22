@@ -2,6 +2,7 @@
 $primary: #e27102;
 $primary-light: #ec9c62; // for btns hover effect on primary layout
 $primary-muted: #fefaf0; // for articles background
+$secondary: #193171;
 // Colors for good-deed
 
 
@@ -14,17 +15,8 @@ $danger: #9e0000;
 $fb: #1877f2;
 
 $theme-colors: (
-        "primary": $primary,
-        "secondary": $gray-4,
-        "light": $white,
-        "gray-2": $gray-2,
-        "fb": $fb,
-        "black": $black,
-  // "success": $success,
-  // "info": $info,
-  // "warning": $warning,
-  // "danger": $danger,
-  // "dark": $dark,,
+  "primary": $primary,
+  "secondary": $secondary,
 );
 
 

@@ -1,5 +1,5 @@
 import './styles/App.scss'
-import MainNav from "./components/Navbar/MainNav";
+import MainNav from "./components/MainNav/MainNav";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Dialogs from "./components/Dialogs/Dialogs"

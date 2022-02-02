@@ -6,30 +6,34 @@ import {Button, Container, Row, Col, Card} from 'react-bootstrap';
 import Jumbotron from '../Jumbotron/Jumbotron'
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
+import s from './Home.module.scss'
+import ChildSlide from '../ChildSlide/ChildSlide'
 
 SwiperCore.use([Pagination, Navigation, Autoplay]);
 
 const Home = (props) => {
     return (
-        <div>
+        <>
             <Jumbotron>
-                    <p className='w-75'>
-                        Русская Православная Диакония в Европе занимается соединением эффективных современных
-                        технологий благотворительности с христианским служением ближнему.
-                        Цель — поддержка тяжелобольных детей и взрослых, объединение нуждающихся в помощи и оказывающих
-                        помощь,
-                        умножение любви и радости в каждом отдельном человеке и в человеческом обществе в целом.
-                    </p>
-                    <Button type={'primary'} view={'btn'} url={'/dialogs'}>ПОМОЧЬ</Button>
+                    <div className='w-50'>
+                        <h4 className={'mb-5'}>
+                            Русская Православная Диакония в Европе занимается соединением эффективных современных
+                            технологий благотворительности с христианским служением ближнему.
+                            Цель — поддержка тяжелобольных детей и взрослых, объединение нуждающихся в помощи и оказывающих
+                            помощь,
+                            умножение любви и радости в каждом отдельном человеке и в человеческом обществе в целом.
+                        </h4>
+                        <Button type={'primary'} view={'btn'} url={'/dialogs'}>ПОМОЧЬ</Button>
+                    </div>
             </Jumbotron>
             <Container className='py-5'>
                 <Swiper
                     spaceBetween={30}
                     centeredSlides={true}
-                    autoplay={{
-                    "delay": 10000,
-                    "disableOnInteraction": false
-                    }}
+                    // autoplay={{
+                    // "delay": 10000,
+                    // "disableOnInteraction": false
+                    // }}
                     pagination={{
                     "clickable": true
                     }}
@@ -38,17 +42,7 @@ const Home = (props) => {
                     {props.homePage.children.map((child) => {
                         return (
                             <SwiperSlide>
-                                <Row className='w-75 mx-auto'>
-                                    <Col>
-                                        <img src={child.photo} alt=""/>
-                                    </Col>
-                                    <Col>
-                                        <p>{child.name}</p>
-                                        <p>{child.age}</p>
-                                        <p>{child.donation_amount}</p>
-                                        <Button variant="primary">ПОМОЧЬ</Button>
-                                    </Col>
-                                </Row>
+                                <ChildSlide child={child}/>
                             </SwiperSlide>
                         )
                     })}
@@ -105,7 +99,7 @@ const Home = (props) => {
             </Container>
             <div className="bg-primary">
                 <Container>
-                    <img src={whiteLogo} alt="" className='w-auto mx-auto'/>
+                    <img src={whiteLogo} alt="" className='mw-100 mx-auto'/>
                     <h2 className={'text-center mb-5'}>СТАТИСТИКА ФОНДА</h2>
                     <Row>
                         <Col className={'d-flex flex-column align-items-center'}>
@@ -163,7 +157,7 @@ const Home = (props) => {
                     </Row>
                 </Container>
             </div>
-        </div>
+        </>
     )
 }
 

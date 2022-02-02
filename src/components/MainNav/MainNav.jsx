@@ -5,7 +5,7 @@ import smallLogo from '../../assets/gd-hand-logo.png'
 
 const MainNav = () => {
   return (
-    <Navbar expand="lg" fixed="top">
+    <Navbar fixed="top" expand="lg">
         <Container className="justify-content-between">
             <Navbar.Brand>
                 <img

@@ -42,25 +42,33 @@ const store = {
         {
           "name": "Степан П.",
           "age": "3 года",
+          "location": "Курск, Россия",
           "donation_amount": "600 000 евро",
+          "diagnose": "нейробластома, рецидив",
           "photo": "https://www.orthodiakonia.de/wp-content/uploads/2022/01/StepanP.jpg"
         },
         {
           "name": "Владимир П.",
           "age": "7 лет",
+          "location": "Курск, Россия",
           "donation_amount": "3000 евро",
+          "diagnose": "нейробластома, рецидив",
           "photo": "https://www.orthodiakonia.de/wp-content/uploads/2022/01/VladimirP.jpg"
         },
         {
           "name": "Алисия П.",
           "age": "9 лет",
+          "location": "Курск, Россия",
           "donation_amount": "1500 евро",
+          "diagnose": "нейробластома, рецидив",
           "photo": "https://www.orthodiakonia.de/wp-content/uploads/2022/01/AliciaP-1.jpg"
         },
         {
           "name": "Марфа К.",
           "age": "4 года",
+          "location": "Курск, Россия",
           "donation_amount": "3000 евро",
+          "diagnose": "нейробластома, рецидив",
           "photo": "https://www.orthodiakonia.de/wp-content/uploads/2022/01/MarthaK-1.jpg"
         }
       ],

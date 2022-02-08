@@ -35,7 +35,8 @@ const Home = (props) => {
                     // "disableOnInteraction": false
                     // }}
                     pagination={{
-                    "clickable": true
+                        el: '.childSlide__pagination',
+                        "clickable": true
                     }}
                     navigation={true}
                 >
@@ -47,6 +48,7 @@ const Home = (props) => {
                         )
                     })}
                 </Swiper>
+                <div className="childSlide__pagination text-center"></div>
             </Container>
             <Container>
                 <h2 className='text-center'>О нас</h2>

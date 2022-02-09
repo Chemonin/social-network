@@ -17,18 +17,28 @@ const ChildSlide = (props) => {
             </Col>
             <Col className={'p-5'}>
                 <h1 className={'childSlide__name'}>{props.child.name}</h1>
-                <p>
-                    <img src={diagnose} alt="" width={'60'} height={'60'}/>
-                    {props.child.diagnose}
-                </p>
-                <p>
-                    <img src={ donate } alt="" width={'60'} height={'60'}/>
-                    {props.child.donation_amount}
-                </p>
-                <p>
-                    <img src={ location } alt="" width={'60'} height={'60'}/>
-                    {props.child.location}
-                </p>
+                <div className="row mt-5">
+                    <div className="col-6">
+                        <div className={'d-flex align-items-center mb-5 gap-2'}>
+                            <img src={diagnose} alt="" width={'60'} height={'60'}/>
+                            <span>
+                                {props.child.diagnose}
+                            </span>
+                        </div>
+                        <div className={'d-flex align-items-center mb-5 gap-2'}>
+                            <img src={ location } alt="" width={'60'} height={'60'}/>
+                            <span>
+                                {props.child.location}
+                            </span>
+                        </div>
+                    </div>
+                    <div className="col-6">
+                        <div className={'d-flex align-items-center gap-2'}>
+                            <img src={ donate } alt="" width={'60'} height={'60'}/>
+                            <span>{props.child.donation_amount}</span>
+                        </div>
+                    </div>
+                </div>
                 <Button variant="primary">ПОМОЧЬ</Button>
                 <a className={'ms-5'} href="">подробнее о ребенке</a>
             </Col>

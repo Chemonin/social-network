@@ -30,4 +30,17 @@ $aspect-ratios: (
         "3x2": calc(2 / 3 * 100%)
 );
 
+$font-family-sans-serif: "Rubik", sans-serif;
+$lead-font-size: 16px;
+
+
+// Buttons
+//$btn-line-height: $input-btn-line-height;
+$btn-padding-x: 20px;
+$btn-padding-y: 10px;
+$btn-border-radius: 10px;
+//$btn-font-size: $input-btn-font-size;
+$btn-font-weight: 500;
+$btn-disabled-opacity: 1;
+
 

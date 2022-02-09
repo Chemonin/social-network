@@ -1,0 +1,14 @@
+.navbar-light .navbar-nav {
+  .nav-link {
+    color: $secondary;
+
+    &:hover,
+    &:focus {
+      color: $primary;
+    }
+
+    &.disabled {
+      color: $navbar-light-disabled-color;
+    }
+  }
+}

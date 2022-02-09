@@ -6,12 +6,12 @@ import smallLogo from '../../assets/gd-hand-logo.png'
 const MainNav = () => {
   return (
     <Navbar fixed="top" expand="lg">
-        <Container className="justify-content-between">
-            <Navbar.Brand>
+        <Container className="justify-content-start">
+            <Navbar.Brand className={'me-4'}>
                 <img
                     src={ smallLogo }
-                    width="130"
-                    height="130"
+                    width="90"
+                    height="90"
                     className="d-inline-block align-top"
                     alt=""
                 />
@@ -26,9 +26,14 @@ const MainNav = () => {
                     <Link to={'/home'} className={'nav-link'}>О НАС</Link>
                 </Nav>
             </Navbar.Collapse>
-            <Nav>
+            <Nav className={'ms-auto'}>
                 <Button variant='primary me-2'>ХОЧУ ПОМОЧЬ</Button>
                 <Button variant='secondary'>НУЖНА ПОМОЩЬ</Button>
+                <div className={'ms-3'}>
+                    <Button variant='primary'>RU</Button>
+                    <Button variant='primary'>EN</Button>
+                    <Button variant='primary'>DE</Button>
+                </div>
             </Nav>
         </Container>
     </Navbar>

@@ -1,6 +1,6 @@
 import React from "react";
 import Feed from "./Feed/Feed";
-import authorAvatar from '../../assets/FrIlya.png'
+import authorAvatar from '../../assets/FrIlya.jpeg'
 import whiteLogo from '../../assets/logo_russian.png'
 import {Button, Container, Row, Col, Card} from 'react-bootstrap';
 import Jumbotron from '../Jumbotron/Jumbotron'
@@ -14,19 +14,9 @@ SwiperCore.use([Pagination, Navigation, Autoplay]);
 const Home = (props) => {
     return (
         <>
-            <Jumbotron>
-                    <div className='w-50'>
-                        <p className={'mb-5'}>
-                            Русская Православная Диакония в Европе занимается соединением эффективных современных
-                            технологий благотворительности с христианским служением ближнему.
-                            Цель — поддержка тяжелобольных детей и взрослых, объединение нуждающихся в помощи и оказывающих
-                            помощь,
-                            умножение любви и радости в каждом отдельном человеке и в человеческом обществе в целом.
-                        </p>
-                        <Button type={'primary'} view={'btn'} url={'/dialogs'}>ПОМОЧЬ</Button>
-                    </div>
-            </Jumbotron>
-            <Container className='py-5'>
+            <Jumbotron/>
+            <section className={s.sliderWrapper}>
+            <Container>
                 <Swiper
                     spaceBetween={30}
                     centeredSlides={true}
@@ -50,11 +40,13 @@ const Home = (props) => {
                 </Swiper>
                 <div className="childSlide__pagination text-center"></div>
             </Container>
+            </section>
+            <section className={s.aboutUs}>
             <Container>
                 <h2 className='text-center'>О нас</h2>
                 <Row>
                     <Col md={5}>
-                        <img src={authorAvatar} alt=""/>
+                        <img src={authorAvatar} alt="" width={'500'}/>
                     </Col>
                     <Col md={7}>
                         <p>
@@ -73,6 +65,7 @@ const Home = (props) => {
                     </Col>
                 </Row>
             </Container>
+            </section>
             <Feed
               posts={props.homePage.posts}
               newPostText={props.homePage.newPostText}

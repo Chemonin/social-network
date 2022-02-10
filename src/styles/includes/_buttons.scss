@@ -26,11 +26,12 @@
 }
 
 .btn-light {
-  color: $gray-1;
+  color: $white;
+  border-color: $white;
 
   &:hover {
-    $btn-light-hover-color: tint-color($gray-5, 33);
-
+    $btn-light-hover-color: tint-color($white, 33);
+    color: $primary;
     background-color: $btn-light-hover-color;
     border-color: $btn-light-hover-color;
   }

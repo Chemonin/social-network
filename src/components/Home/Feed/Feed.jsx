@@ -20,21 +20,12 @@ const Feed = (props) => {
       props.dispatch(action)
     }
     return (
-        <Container className={"py-5"}>
-            <h2 className={'text-center'}>НОВОСТИ</h2>
-            <ul className={s.posts}>
+        <Container className={"py-5 d-flex flex-column "}>
+            <p className={'text-center text-secondary fs-1'}>НОВОСТИ</p>
+            <ul className={ s.posts + ' row justify-content-between'}>
                 { postsElements }
-                <Button type={'primary'} view={'btn'} url={'#'}>ВСЕ СОБЫТИЯ</Button>
             </ul>
-            {/*<div>*/}
-            {/*    <h3>New Post</h3>*/}
-            {/*    <textarea name="" id="" cols="30" rows="5"*/}
-            {/*        onChange={ onPostChange}*/}
-            {/*        ref={newPostElement} value={ props.newPostText }*/}
-            {/*    />*/}
-            {/*    <button onClick={ addPost }>Add</button>*/}
-            {/*    <button>Delete</button>*/}
-            {/*</div>*/}
+            <a className={"btn btn-primary mx-auto"} href="#" role="button">ВСЕ СОБЫТИЯ</a>
         </Container>
     )
 }

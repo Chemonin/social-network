@@ -43,12 +43,11 @@ const Home = (props) => {
             </section>
             <section className={s.aboutUs}>
             <Container>
-                <h2 className='text-center'>О нас</h2>
-                <Row>
-                    <Col md={5}>
-                        <img src={authorAvatar} alt="" width={'500'}/>
+                <Row className={'justify-content-center'}>
+                    <Col md={6}>
+                        <img src={authorAvatar} alt="" width={'600'}/>
                     </Col>
-                    <Col md={7}>
+                    <Col md={5}>
                         <p>
                             Уже в течение нескольких лет ряд приходов Русской Православной Церкви в
                             Германии помогают русскоязычным детям и их родителям, которые приезжают в Германию на лечение.
@@ -61,7 +60,7 @@ const Home = (props) => {
                             Служение ближним – по-гречески диакония – является естественным продолжением Литургии.
                             Дай Бог, чтобы это делание продолжало находить себе достойных делателей!
                         </p>
-                        <strong>Протоиерей Илья Лимбергер, Штутгарт, храм Св. Николая</strong>
+                        <strong>Протоиерей Илья Лимбергер, <br/>Штутгарт, храм Св. Николая</strong>
                     </Col>
                 </Row>
             </Container>
@@ -71,27 +70,28 @@ const Home = (props) => {
               newPostText={props.homePage.newPostText}
               dispatch={props.dispatch}
             />
-            <Container>
-                <h3 className={'text-center'}>ПАРТЕНЕРЫ</h3>
-                <Swiper
-                    spaceBetween={30}
-                    slidesPerView={2}
-                    pagination={{
-                        "clickable": true
-                    }}
-                    navigation={true}
-                >
-                    {props.homePage.partners.map((partner) => {
-                        return (
-                            <SwiperSlide>
-                                <a href={partner.link}>
-                                    <img src={partner.logo} alt="" width={300} height={300}/>
-                                </a>
-                            </SwiperSlide>
-                        )
-                    })}
-                </Swiper>
-            </Container>
+            <section className={s.partnersWrapper}>
+                <Container>
+                    <p className={'text-center text-secondary fs-1'}>ПАРТЕНЕРЫ</p>
+                    <Swiper
+                        className={'my-5'}
+                        spaceBetween={30}
+                        slidesPerView={3}
+
+                        navigation={true}
+                    >
+                        {props.homePage.partners.map((partner) => {
+                            return (
+                                <SwiperSlide className={'px-5 text-center'}>
+                                    <a href={partner.link}>
+                                        <img src={partner.logo} alt="" width={100} height={100}/>
+                                    </a>
+                                </SwiperSlide>
+                            )
+                        })}
+                    </Swiper>
+                </Container>
+            </section>
             <div className="bg-primary">
                 <Container>
                     <img src={whiteLogo} alt="" className='mw-100 mx-auto'/>

@@ -17,11 +17,17 @@
     background-color: #fefaf0;
 }
 
+.partnersWrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .aboutUs {
     background: linear-gradient(170deg,#fefaf0 0%,#fefaf0 50%,#fff 51%,#fff 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top -21px center;
+    padding: 50px 0;
 }
 
 .intro {

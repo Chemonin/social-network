@@ -72,6 +72,28 @@ const store = {
           "photo": "https://www.orthodiakonia.de/wp-content/uploads/2022/01/MarthaK-1.jpg"
         }
       ],
+      feature: [
+        {
+          "title": "Feature card title",
+          "subtitle": "Card Subtitle",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+          "title": "Feature card title",
+          "subtitle": "Card Subtitle",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+          "title": "Feature card title",
+          "subtitle": "Card Subtitle",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+          "title": "Feature card title",
+          "subtitle": "Card Subtitle",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+      ],
       partners: [
         {
           "link": "#",

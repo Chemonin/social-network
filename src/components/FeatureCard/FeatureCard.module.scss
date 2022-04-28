@@ -1,0 +1,14 @@
+.featureCard {
+  color: #ffffff;
+  width: 450px;
+  display: flex;
+  margin: 20px 40px;
+  padding: 20px;
+
+  &_image {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+}

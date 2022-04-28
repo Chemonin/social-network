@@ -16,22 +16,22 @@ const Dialogs = (props) => {
     }
     return (
         <div className={ s.container }>
-          <div className={ s.dialogs }>
-            <div className={ s.dialogsItems }>
-                { dialogElements }
-            </div>
-            <div className={ s.messages }>
-              <div>
-                { messegesElements }
-              </div>
-              <div>
-                <h3>New message</h3>
-                <textarea name="" id="" cols="30" rows="5" ref={newMessageElement}></textarea>
-                <button onClick={ addMessage }>Add</button>
-                <button>Delete</button>
-              </div>
-            </div>
-          </div>
+          {/*<div className={ s.dialogs }>*/}
+          {/*  <div className={ s.dialogsItems }>*/}
+          {/*      { dialogElements }*/}
+          {/*  </div>*/}
+          {/*  <div className={ s.messages }>*/}
+          {/*    <div>*/}
+          {/*      { messegesElements }*/}
+          {/*    </div>*/}
+          {/*    <div>*/}
+          {/*      <h3>New message</h3>*/}
+          {/*      <textarea name="" id="" cols="30" rows="5" ref={newMessageElement}></textarea>*/}
+          {/*      <button onClick={ addMessage }>Add</button>*/}
+          {/*      <button>Delete</button>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
         </div>
     )
 }

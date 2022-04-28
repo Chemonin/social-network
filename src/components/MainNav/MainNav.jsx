@@ -8,6 +8,7 @@ const MainNav = () => {
     <Navbar fixed="top" expand="lg">
         <Container className="justify-content-start">
             <Navbar.Brand className={'me-4'}>
+                <a href="./">
                 <img
                     src={ smallLogo }
                     width="90"
@@ -15,6 +16,7 @@ const MainNav = () => {
                     className="d-inline-block align-top"
                     alt=""
                 />
+                </a>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className='flex-grow-0'>

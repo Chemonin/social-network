@@ -13,7 +13,8 @@ const App = (props) => {
         <MainNav/>
         <Switch>
           <Route
-            path='/home'
+            path='/'
+            exact={'/'}
             render={ () => <Home
               homePage={props.state.homePage}
               dispatch={props.dispatch}

@@ -10,12 +10,12 @@ const ChildSlide = (props) => {
     }
     return (
         <Row className={"childSlide"}>
-            <Col className={'p-0'}>
+            <Col xs={12} xl={6} className={'p-0'}>
                 <div style={s} className={'childSlide__photo'}>
 
                 </div>
             </Col>
-            <Col className={'p-5'}>
+            <Col xs={12} xl={6} className={'p-5'}>
                 <h1 className={'childSlide__name'}>{props.child.name}</h1>
                 <div className="row mt-5">
                     <div className="col-6">

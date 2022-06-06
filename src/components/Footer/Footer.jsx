@@ -34,9 +34,9 @@ const Footer = () => {
             <Link view={'default'} type={'light'} url={"#"}>
               PayPal
             </Link>
-            <a className={"btn btn-primary mx-auto mt-3"} href="#" role="button">Свяжитесь с нами</a>
+            <a className={"btn btn-primary mx-auto my-3"} href="#" role="button">Свяжитесь с нами</a>
           </Col>
-          <Col>
+          <Col className={'d-flex d-md-block flex-wrap justify-content-center'}>
             <Link view={'default'} type={'light'} url={"#"}>Impressum</Link>
             <br/>
             <Link view={'default'} type={'light'} url={"#"}>Datenschutzerklärung</Link>
@@ -44,7 +44,9 @@ const Footer = () => {
               Russisch Orthodoxe Kirchengemeinde Stuttgart
             </p>
             <p className={'text-white'}>
-              IBAN:DE62600501010002645779, BIC: SOLADEST, Zweck: Kinderhilf
+              IBAN:DE62600501010002645779,
+              BIC: SOLADEST,
+              Zweck: Kinderhilf
             </p>
           </Col>
         </Row>

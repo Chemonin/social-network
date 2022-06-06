@@ -12,3 +12,15 @@
     }
   }
 }
+
+.navbar-collapse {
+  @include media-breakpoint-down(md) {
+    position: absolute;
+    left: 0;
+    top: 98%;
+    width: 100%;
+    background-color: $white;
+    text-align: center;
+    z-index: 10;
+  }
+}

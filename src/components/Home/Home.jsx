@@ -44,7 +44,7 @@ const Home = (props) => {
             <Container>
                 <Row className={'justify-content-center'}>
                     <Col md={6}>
-                        <img src={authorAvatar} alt="" width={'600'}/>
+                        <img src={authorAvatar} alt="" width={'600'} className={'mw-100 mb-4'}/>
                     </Col>
                     <Col md={5}>
                         <p>
